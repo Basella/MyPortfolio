@@ -1,0 +1,43 @@
+.pubMain {
+  margin-left: 60px;
+  margin-right: 60px;
+  padding-bottom: 200px;
+}
+
+.pubT {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.pubTopic {
+  font-weight: 500;
+}
+
+.linkDiv {
+  margin-left: 740px;
+}
+
+button {
+  background-color: purple;
+  color: white;
+  border-radius: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+button:focus {
+  outline: lightgrey;
+}
+
+// .pubTitle {
+//   font-weight: 600;
+//   font-size: 20px;
+//   text-align: center;
+// }
+
+// .pub {
+//   width: 1350px;
+//   height: 100vh;
+// }

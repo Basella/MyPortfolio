@@ -1,0 +1,46 @@
+.abtMainDiv {
+  height: 90vh;
+}
+
+.basic {
+  display: flex;
+}
+
+.nameDiv {
+  margin-left: 50px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.cntctDiv {
+  margin-left: 295px;
+}
+
+.hdr {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+}
+
+.scndDiv {
+  display: flex;
+}
+
+.imgDiv {
+  width: 400px;
+  height: 500px;
+  margin-left: 50px;
+  border: 2px solid lightslategrey;
+  border-radius: 3px;
+}
+
+.writeDiv {
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
+}
+
+.quoteP {
+  font-style: italic;
+}

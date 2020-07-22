@@ -1,0 +1,117 @@
+.mainDiv {
+  background-color: wheat;
+  // height: 100vh;
+  // overflow-y: hidden;
+}
+
+.mainSubDiv {
+  // height: 100vh;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-left: 5px solid purple;
+  border-right: 5px solid purple;
+}
+
+.divBfrNav {
+  height: 100px;
+}
+
+.hDiv {
+  display: flex;
+  justify-content: space-around;
+}
+
+.firstDiv {
+  padding-top: 20px;
+}
+
+.brandStyle {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  color: purple;
+}
+
+.poultryDiv {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 100px;
+  height: 80px;
+}
+
+.mainNav {
+  margin-bottom: 3.9rem !important;
+}
+
+.navCon {
+  height: 60px;
+  line-height: 0.8;
+}
+
+.ulClass {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.font-25px {
+  font-size: 35px;
+}
+
+.nav-link, .footrWriteup {
+  font-weight: 500;
+}
+
+.md-avatar {
+  vertical-align: middle;
+  width:40px;
+  height: 40px;
+}
+
+.imgA {
+  padding: 0.1rem 1.1rem;
+}
+
+.hLine {
+  background-color: purple;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.foot {
+  padding-bottom: 20px;
+}
+
+.footBdy {
+  display: flex;
+}
+
+.emaill {
+  margin-left: 220px;
+}
+
+.phonee {
+  margin-left: 200px;
+}
+
+.hdrRpt {
+  display: flex;
+  justify-content: center;
+}
+
+.footW {
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.footWr {
+  padding-right: 5px;
+}
+
+.footCV {
+  cursor: pointer;
+}
+
+.vl {
+  border-left: 2px solid purple;
+  height: 20px;
+  padding-right: 5px;
+}

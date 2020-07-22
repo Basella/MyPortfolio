@@ -1,0 +1,88 @@
+<div class="mainDiv">
+  <div class="mainSubDiv">
+    <div class="divBfrNav">
+      <div class="hDiv">
+        <div class="firstDiv">
+          <mdb-navbar-brand
+            ><a class="navbar-brand font-25px brandStyle" [routerLink]="'/'"
+              >Research Portfolio</a
+            ></mdb-navbar-brand
+          >
+        </div>
+
+        <!-- <div>
+          <img src="../../assets/images/poultry.jpg" class="poultryDiv">
+        </div> -->
+      </div>
+
+    </div>
+
+    <!-- full navbar -->
+    <div class="fixed-margin-btm mainNav">
+      <!--Navbar-->
+      <mdb-navbar
+        SideClass="navbar navbar-expand-lg navbar-dark py-3 px-lg-5 px-md-5 purple"
+        [containerInside]="false" class="navCon"
+      >
+        <!-- Collapsible content -->
+        <links>
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto ulClass">
+            <li class="nav-item" id="activeItms" (click)="aboutClick()" [ngClass]="{active: aboutChckd}">
+              <a class="nav-link waves-light" href="/home" mdbWavesEffect>Home</a>
+            </li>
+            <li class="nav-item" id="activeItms" (click)="undergradDocsClick()" [ngClass]="{active: undergradDocsChckd}">
+              <a class="nav-link waves-light" href="/docs" mdbWavesEffect>Undergraduate Documents</a>
+            </li>
+            <li class="nav-item" id="activeItms" (click)="pubClick()" [ngClass]="{active: pubChckd}">
+              <a class="nav-link waves-light" href="/publications" mdbWavesEffect>Publications</a>
+            </li>
+            <li class="nav-item" id="activeItms" (click)="cvClick()" [ngClass]="{active: cvChckd}">
+              <a class="nav-link waves-light" href="/resume" mdbWavesEffect>Resume</a>
+            </li>
+            <!-- <li class="nav-item" id="activeItms" (click)="cvClick()" [ngClass]="{active: cvChckd}">
+              <a class="nav-link waves-light" href="/references" mdbWavesEffect>References</a>
+            </li> -->
+
+          </ul>
+        </links>
+        <!-- Collapsible content -->
+      </mdb-navbar>
+      <!--/.Navbar-->
+    </div>
+
+
+    <router-outlet></router-outlet>
+
+    <hr class="hLine">
+
+    <div class="foot">
+      <div class="footBdy">
+        <p class="emaill"><strong>Email: </strong><span>emmanuelaezeakacha@gmail.com</span></p>
+        <p class="phonee"><strong>Phone: </strong><span>+2347032740011</span></p>
+      </div>
+
+      <div>
+        <div class="hdrRpt">
+          <p [routerLink]="'/about'" class="footW">Home</p>
+          <div class="vl"></div>
+          <p [routerLink]="'/docs'" class="footW">Undergraduate Documents</p>
+          <div class="vl"></div>
+          <p [routerLink]="'/pub'" class="footW">Publications</p>
+          <div class="vl"></div>
+          <p [routerLink]="'/cv'" class="footCV">Resume</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="hdrRpt">
+          <p class="footWr">Animal Science</p>
+          <div class="vl"></div>
+          <p class="footWr">Animal Nutrition</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
