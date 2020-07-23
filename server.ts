@@ -17,10 +17,39 @@ const app = express();
 // });
 
 app.use(express.static('./dist/My-Research-Portfolio'));
+// app.use('/docs', express.static('./src/app/undergrad-docs/undergrad-docs.component.html'));
+
+
+// app.use('/docs', (req, res) => {
+//   // app.use(express.static(path.join(ROOTDIR, 'src/app/undergrad-docs/undergrad-docs.component.html')));
+//   res.sendFile(path.join(ROOTDIR, 'src/app/undergrad-docs/undergrad-docs.component.html'));
+//   res.render(path.join(ROOTDIR, 'src/app/undergrad-docs/undergrad-docs.component.html'));
+//   // res.sendFile(path.join(ROOTDIR, 'src/app/undergrad-docs/undergrad-docs.component.html'));
+// });
+// app.use('/publications', (req, res) => {
+//   app.use(express.static(path.join(ROOTDIR, 'src/app/publications/publications.component.html')));
+//   // res.sendFile(path.join(ROOTDIR, 'src/app/undergrad-docs/undergrad-docs.component.html'));
+// });
+// app.use('/resume', (req, res) => {
+//   app.use(express.static(path.join(ROOTDIR, 'src/app/curriculum-vitae/curriculum-vitae.component.html')));
+//   // res.sendFile(path.join(ROOTDIR, 'src/app/undergrad-docs/undergrad-docs.component.html'));
+// });
+
+
+// app.use('/publications', (req, res) => {
+//   res.sendFile(path.join(ROOTDIR, 'src/app/publications/publications.component.html'));
+// });
+// app.use('/resume', (req, res) => {
+//   res.sendFile(path.join(ROOTDIR, 'src/app/curriculum-vitae/curriculum-vitae.component.html'));
+// });
+
+
+// app.use(express.static(path.join(ROOTDIR, '/src/app/app.component.html')));
 // app.use(express.static('./src/index.html'));
 
-app.all('/*', (req, res) => {
+app.use('/*', (req, res) => {
   res.sendFile(path.join(ROOTDIR, 'dist/my-research-portfolio/index.html'));
+  // res.sendFile(path.join(ROOTDIR, 'src/app/mainpage/mainpage.component.html'));
   // res.sendFile('app.component.html', { root: 'src/app/'});
 });
 
