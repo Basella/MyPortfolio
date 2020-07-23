@@ -19,7 +19,7 @@ const app = express();
 app.use(express.static('./dist/My-Research-Portfolio'));
 // app.use(express.static('./src/index.html'));
 
-app.use((req, res) => {
+app.all('/*', (req, res) => {
   res.sendFile(path.join(ROOTDIR, 'dist/my-research-portfolio/index.html'));
   // res.sendFile('app.component.html', { root: 'src/app/'});
 });

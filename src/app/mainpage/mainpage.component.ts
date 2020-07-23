@@ -45,7 +45,6 @@ cvChckd: boolean;
 
   checkAbout() {
     this.dataHolder.aboutC.subscribe((res) => {
-      console.log("res about is: ", res)
       if (res === true) {
         this.aboutChckd = true;
       } else {
@@ -56,7 +55,6 @@ cvChckd: boolean;
 
   checkUndergrad() {
     this.dataHolder.undergradDocsC.subscribe((res) => {
-      console.log("res ug is: ", res)
       if (res === true) {
         this.undergradDocsChckd = true;
       } else {
@@ -67,7 +65,6 @@ cvChckd: boolean;
 
   checkPub() {
     this.dataHolder.pubC.subscribe((res) => {
-      console.log("res pub is: ", res)
       if (res === true) {
         this.pubChckd = true;
       } else {
@@ -78,7 +75,6 @@ cvChckd: boolean;
 
   checkCV() {
     this.dataHolder.cvC.subscribe((res) => {
-      console.log("res cv is: ", res)
       if (res === true) {
         this.cvChckd = true;
       } else {
