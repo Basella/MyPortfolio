@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const ROOTDIR = path.join(__dirname);
 const app = express();
 
 // app.use('/js', express.static(__dirname + '/js'));
@@ -48,7 +47,7 @@ app.use(express.static(__dirname + '/dist/My-Research-Portfolio'));
 // app.use(express.static('./src/index.html'));
 
 app.use('/*', (req, res) => {
-  res.sendFile(path.join(ROOTDIR, 'dist/my-research-portfolio/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/my-research-portfolio/index.html'));
   // res.sendFile(path.join(ROOTDIR, 'src/app/mainpage/mainpage.component.html'));
   // res.sendFile('app.component.html', { root: 'src/app/'});
 });
