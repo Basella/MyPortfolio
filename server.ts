@@ -15,8 +15,7 @@ const app = express();
 //     // res.sendFile(path.join(ROOTDIR, 'dist/My-Research-Portfolio/index.html'));
 // });
 
-// app.use(express.static(__dirname +  '/dist/My-Research-Portfolio'));
-app.use(express.static('dist'));
+app.use(express.static(__dirname +  '/dist/My-Research-Portfolio'));
 // app.use('/docs', express.static('./src/app/undergrad-docs/undergrad-docs.component.html'));
 
 
@@ -48,8 +47,7 @@ app.use(express.static('dist'));
 // app.use(express.static('./src/index.html'));
 
 app.get('/*', (req, res) => {
-  res.sendFile('index.html');
-  // res.sendFile(path.join(__dirname + '/dist/my-research-portfolio/index.html'));
+  res.sendFile(path.join('/dist/my-research-portfolio/index.html'));
   // res.sendFile(path.join(ROOTDIR, 'src/app/mainpage/mainpage.component.html'));
   // res.sendFile('app.component.html', { root: 'src/app/'});
 });
