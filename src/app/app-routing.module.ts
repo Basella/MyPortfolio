@@ -10,6 +10,13 @@ const routes: Routes = [
         (m) => m.MainpageModule
       ),
   },
+  {
+    path: ' ',
+    loadChildren: () =>
+      import('../app/mainpage/mainpage.module').then(
+        (m) => m.MainpageModule
+      ),
+  },
 ];
 
 @NgModule({

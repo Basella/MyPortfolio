@@ -19,4 +19,17 @@ export const appRoutesLazyLoad: Routes = [
       { path: 'references', component: ReferencesComponent }
     ],
   },
+  {
+    path: ' ',
+    component: MainpageComponent,
+    children: [
+      { path: '', component: AboutComponent },
+      { path: ' ', component: AboutComponent },
+      { path: 'home', component: AboutComponent },
+      { path: 'docs', component: UndergradDocsComponent },
+      { path: 'publications', component: PublicationsComponent },
+      { path: 'resume', component: CurriculumVitaeComponent },
+      { path: 'references', component: ReferencesComponent }
+    ],
+  },
 ];
