@@ -16,7 +16,7 @@ const app = express();
 // });
 
 // app.use(express.static(__dirname +  './dist/My-Research-Portfolio'));
-app.use(express.static('dist'));
+app.use(express.static(__dirname +  '/dist/My-Research-Portfolio'));
 // app.use('/docs', express.static('./src/app/undergrad-docs/undergrad-docs.component.html'));
 
 
@@ -48,11 +48,12 @@ app.use(express.static('dist'));
 // app.use(express.static('./src/index.html'));
 
 app.get('/*', (req, res) => {
-  // res.sendFile(path.join(__dirname + './dist/my-research-portfolio/index.html'));
-  res.sendFile('index.html');
+  res.sendFile(path.join(__dirname + '/dist/my-research-portfolio/index.html'));
   // res.sendFile(path.join(ROOTDIR, 'src/app/mainpage/mainpage.component.html'));
   // res.sendFile('app.component.html', { root: 'src/app/'});
 });
 
-app.listen(process.env.PORT || 3000);
-console.log('Listening on port ' + 3000);
+// app.listen(process.env.PORT || 3000);
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Listening on port ${process.env.PORT || 3000}`);
+});
