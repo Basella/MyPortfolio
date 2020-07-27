@@ -50,7 +50,8 @@ app.use(express.static(__dirname +  '/dist/My-Research-Portfolio'));
 // app.use(express.static('./src/index.html'));
 
 app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/dist/my-research-portfolio/index.html'));
+  // res.sendFile(path.join(__dirname + '/dist/my-research-portfolio/index.html'));
+  res.sendFile(path.join(__dirname + './dist/my-research-portfolio/index.html'));
   // res.sendFile(path.join(ROOTDIR, 'src/app/mainpage/mainpage.component.html'));
   // res.sendFile('app.component.html', { root: 'src/app/'});
 });
