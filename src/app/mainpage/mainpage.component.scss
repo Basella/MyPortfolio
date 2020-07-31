@@ -1,11 +1,8 @@
 .mainDiv {
   background-color: wheat;
-  // height: 100vh;
-  // overflow-y: hidden;
 }
 
 .mainSubDiv {
-  // height: 100vh;
   margin-left: 100px;
   margin-right: 100px;
   border-left: 5px solid purple;
@@ -85,14 +82,16 @@
 }
 
 .emaill {
-  margin-left: 220px;
+  // margin-left: 220px;
+  margin-left: 15%;
 }
 
 .phonee {
-  margin-left: 200px;
+  // margin-left: 200px;
+  margin-left: 30%;
 }
 
-.hdrRpt {
+.hdrRpt, .hdrRptt {
   display: flex;
   justify-content: center;
 }
@@ -110,8 +109,62 @@
   cursor: pointer;
 }
 
-.vl {
+.vl, .vll {
   border-left: 2px solid purple;
   height: 20px;
   padding-right: 5px;
+}
+
+@media (max-width: 414px) {
+  .mainSubDiv {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .font-25px {
+    font-size: 20px;
+  }
+
+  .footBdy {
+    display: block;
+  }
+
+  .emaill, .phonee {
+    margin-left: 30px;
+  }
+
+  .hdrRpt {
+    display: block;
+    text-align: center;
+  }
+
+  .vl {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .emaill, .phonee {
+    margin-left: 20px;
+  }
+}
+
+@media (width: 768px) {
+  .emaill {
+    margin-left: 60px;
+  }
+
+  .phonee {
+    margin-left: 30px;
+  }
+}
+
+@media (width: 1024px) {
+  .emaill {
+    margin-left: 90px;
+  }
+
+  .phonee {
+    margin-left: 150px;
+  }
 }
