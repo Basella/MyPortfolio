@@ -164,3 +164,17 @@
     margin-right: 100px;
   }
 }
+
+@media (min-width: 1280px) {
+  .basic {
+    display: block;
+  }
+
+  .cntctDiv {
+    margin-left: 50px;
+  }
+
+  .scndDiv {
+    display: block;
+  }
+}
