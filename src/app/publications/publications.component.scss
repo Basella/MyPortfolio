@@ -83,12 +83,12 @@ button:focus {
   }
 }
 
-@media (min-width: 1280px) {
+@media (width: 1280px) {
   .pubMain {
     height: 66.2vh;
   }
-  
+
   .linkDiv {
-    margin-left: 50%;
+    margin-left: 80%;
   }
 }

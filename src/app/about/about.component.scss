@@ -58,6 +58,7 @@
 
   .nameDiv {
     font-size: 17px;
+    margin-right: 0px;
   }
 
   .cntctDiv, .nameDiv {
@@ -71,7 +72,6 @@
   .imgDiv {
     width: 250px;
     height: 250px;
-    // margin-top: 40px;
     margin-left: 50px;
   }
 
@@ -132,10 +132,6 @@
     margin-left: 60px;
   }
 
-  // .scndDiv {
-  //   margin-top: 50px;
-  // }
-
   .writeDiv {
     margin-top: 80px;
     margin-left: 60px;
@@ -156,25 +152,13 @@
     margin-left: 60px;
   }
 
-  // .scndDiv {
-  //   margin-top: 70px;
-  // }
-
   .writeDiv {
     margin-right: 100px;
   }
 }
 
-@media (min-width: 1280px) {
-  .basic {
-    display: block;
-  }
-
+@media (width: 1280px) {
   .cntctDiv {
-    margin-left: 50px;
-  }
-
-  .scndDiv {
-    display: block;
+    margin-left: 200px;
   }
 }

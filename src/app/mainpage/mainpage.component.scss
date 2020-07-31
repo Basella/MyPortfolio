@@ -39,6 +39,12 @@
   margin-bottom: 3.9rem !important;
 }
 
+.nav-item:focus, .nav-item:hover {
+  outline: none;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
 .navCon {
   height: 60px;
   line-height: 0.8;
@@ -169,12 +175,12 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (width: 1280px) {
   .emaill {
-    margin-left: 20px;
+    margin-left: 50px;
   }
 
   .phonee {
-    margin-left: 19%;
+    margin-left: 47%;
   }
 }
